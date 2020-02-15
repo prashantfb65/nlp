@@ -14,8 +14,22 @@ Document 1 text:
 Document 2 text"
 "India is progressing"
 
-Featurised word count:
+**Featurised word count:**
 
 "India is really good in Cricket" --> ("India", "is", "good", "in", "cricket", "progressing") --> (1,1,1,1,1,0)
 
 "India is progressing" --> ("India", "is", "good", "in", "cricket", "progressing") --> (1,1,0,0,0,1)
+
+
+## TF-IDF
+1. Term Frequency
+
+Importance of the term within that document.
+
+TF(d,t) --> number of occurences of term 't' in document 'd'
+
+2. Inverse Document Frequency
+
+Importance of the term in the corpus.
+
+IDF(t) --> log(D/t) where 'D' is equal to total number of documents and 't' is the number of documents with the term.
