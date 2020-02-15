@@ -35,3 +35,14 @@ Importance of the term in the corpus.
 IDF(t) --> log(D/t) where 'D' is equal to total number of documents and 't' is the number of documents with the term.
 
 ![TF-IDF Mathematically](img/tf-idf.png)
+
+
+## K Means clustering
+
+K Means clustering is an unsupervised learning algorithm that will attempt to group similar clusters together in the data. Some of its applications can be:
+
+1. Cluster similar documents
+2. Cluster customers based on Features
+3. Market Segmentation
+4. Identify similar physical groups
+
