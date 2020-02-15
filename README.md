@@ -6,6 +6,7 @@ Some of the common challenges in natural language processing involve speech reco
 ## Bag of Words
 A document represented as a vector of words counts is called a "Bag of Words".
 The cosine similarity can then be used to find the similarity between the two documents.
+We can use TF-IDF (Term Frequency - Inverse Document Frequency) to improve on BOW, which actually adjust word counts based on their frequency in corpus.
 
 Document 1 text:
 "India is good in cricket"
@@ -14,5 +15,7 @@ Document 2 text"
 "India is progressing"
 
 Featurised word count:
+
 "India is really good in Cricket" --> ("India", "is", "good", "in", "cricket", "progressing") --> (1,1,1,1,1,0)
+
 "India is progressing" --> ("India", "is", "good", "in", "cricket", "progressing") --> (1,1,0,0,0,1)
