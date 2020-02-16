@@ -83,6 +83,22 @@ Integer to dense vector
 
 Its up to the user to choose the number of embeddings dimensions.
 
+* GRU (Gated Recurrent Unit)
+
+It is like a long short-term memory (LSTM) with forget gate but has fewer parameters than LSTM, as it lacks an output gate.
+
+* Dense Layer
+
+One neuron per character. Character labels will be one hot encoded so the final dense layer produces a probability per character.
+
+5. Training the model
+
+We set the batches and one-hot encoding on the character labels in this step.
+
+6. Generating new text
+
+In this step, we save the model weights and show hwo to reload a model's weights with a different batch size in order to pass in single examples.
+
 
     
   
