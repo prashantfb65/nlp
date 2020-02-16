@@ -72,4 +72,17 @@ But not so long that the sequence is just historical noise.
 ["e", "l", "l", "o", " ", "m", "y"]
 
 4.  Creating the Model
+
+* Embedding Layer
+
+Turns positive integers (indexes) into dense vectors of fixed size. 
+
+e.g. [[4],[20]] --> [[0.25, 0.1, 0.3], [0.6, -0.2, 0.9]] 
+
+Integer to dense vector
+
+Its up to the user to choose the number of embeddings dimensions.
+
+
+    
   
