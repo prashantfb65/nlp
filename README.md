@@ -46,3 +46,30 @@ K Means clustering is an unsupervised learning algorithm that will attempt to gr
 3. Market Segmentation
 4. Identify similar physical groups
 
+
+## Using Tensorflow for NLP
+
+1. Read in Text data
+
+This involves reading the corpus of text as string data.
+
+Large enough data is required to properly train the data (at least 1 million characters), and get the realistic results.
+
+2. Text processing and Vectorization
+
+Neural network can't take in raw strings, so encoding of those to integer is also required.
+
+e.g. A --> 1, C --> 3, ? --> 55
+
+3. Creating batches
+
+We will use Tensorflow's dataset object to easily create batches of text sequences.
+The aim here is using long enough sequence length to capture structure and previous words.
+But not so long that the sequence is just historical noise.
+
+["h", "e", "l", "l", "o", " ", "m"]
+
+["e", "l", "l", "o", " ", "m", "y"]
+
+4.  Creating the Model
+  
